@@ -1,0 +1,131 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 32px;
+    /* height: 90px; */
+    /* border: 1px solid #fff; */
+}
+
+.header-logo {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.header-logo-img {
+    width: 135px;
+    height: 24px;
+}
+
+.header-menu-list {
+    display: flex;
+    column-gap: 50px;
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+}
+
+/* .header-item {
+    display: inline-flex;
+    gap: 10px;
+} */
+
+.header-menu-link {
+    display: inline-flex;
+    gap: 7px;
+    height: 90px;
+    align-items: center;
+}
+
+.header-menu-link.is-current::after {
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: currentColor;
+    border-radius: 50%;
+}
+
+.header-menu-link:hover {
+    color: var(--color-light-gray);
+}
+
+.header-wrapper-buttons {
+    display: inline-flex;
+    column-gap: 40px;
+}
+
+.book-now-button:hover {
+    background-color: var(--color-light-gray);
+}
+
+.book-now-button {
+    padding-inline: 26px;
+    padding-block: 7px;
+    color: var(--color-dark);
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    line-height: 24px;
+    border: none;
+}
+
+.burger-button {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 4px;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: var(--border);
+    color: var(--color-light);
+}
+
+.burger-button:hover {
+    color: var(--color-light-gray);
+    border-color: var(--color-light-gray);
+}
+
+.header-burger-line {
+    margin-left: 4px;
+    width: 5px;
+    height: 1px;
+    background-color: currentColor;
+    box-shadow: 14px 0px 0px 0px currentColor;
+}
+
+@media (max-width: 950px) {
+    .header {
+        flex-wrap: wrap;
+        padding-top: 20px;
+        padding-inline: 15px;
+    }
+
+    .header-menu {
+        order: 1;
+    }
+
+    .header-menu-list {
+        flex-wrap: wrap;
+    }
+
+    .header-menu-link {
+        height: 50px;
+    }
+}
+
+@media (max-width: 500px) {
+    .header-menu-list {
+        column-gap: 20px;
+    }
+
+    .header-menu-link {
+        height: 46px;
+
+    }
+
+    .header-wrapper-buttons {
+        column-gap: 20px;
+    }
+}
