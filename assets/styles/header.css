@@ -2,9 +2,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--color-dark-alternative);
     padding-inline: 32px;
-    /* height: 90px; */
-    /* border: 1px solid #fff; */
+    min-height: var(--header-height);
 }
 
 .header-logo {
@@ -26,15 +26,10 @@
     font-weight: 700;
 }
 
-/* .header-item {
-    display: inline-flex;
-    gap: 10px;
-} */
-
 .header-menu-link {
     display: inline-flex;
     gap: 7px;
-    height: 90px;
+    height: var(--header-height);
     align-items: center;
 }
 
@@ -80,6 +75,7 @@
     background-color: transparent;
     border: var(--border);
     color: var(--color-light);
+    border-radius: 50%;
 }
 
 .burger-button:hover {
