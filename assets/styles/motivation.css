@@ -81,5 +81,6 @@
 
     .motivation-item:nth-child(even) .motivation-card {
     flex-direction: column;
+    }
 
 }
