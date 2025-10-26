@@ -37,15 +37,45 @@ a {
     border: none;
 }
 
+.button.transparent {
+    display: inline-flex;
+    padding: 14px 80px 14px 30px;
+    border: solid 1px;
+    font-weight: 700;
+    font-size: min(0.68vw, 13px);
+    line-height: 200%;
+    letter-spacing: 0.1em;
+    position: relative;
+}
+
+.button.transparent::after {
+    content: "";
+    height: 100%;
+    aspect-ratio: 1;
+    right: 0;
+    position: absolute;
+    background: url(../svg/arrow_45.svg) center/70% no-repeat;
+    border-radius: 50%;
+    background-color: transparent;
+    border: solid 1px;
+    border-color: var(--color-light);
+}
+
+.button.transparent:hover {
+    color: var(--color-dark);
+    background-color: var(--color-light-gray);
+    transition-duration: 0.2s;
+}
+
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }

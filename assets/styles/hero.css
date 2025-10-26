@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: end;
     background-color: var(--color-dark-alternative);
-    padding-bottom: 30px;
+    padding-bottom: 50px;
     min-height: calc(100vh - var(--header-height));
     
 }
