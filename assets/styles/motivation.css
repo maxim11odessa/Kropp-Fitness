@@ -1,5 +1,7 @@
 .motivation-item:nth-child(even) .motivation-card {
     flex-direction: row-reverse;
+    background-color: var(--color-dark-alternative);
+    padding-inline: 200px;
 }
 
 .motivation-list {
@@ -80,7 +82,7 @@
     }
 
     .motivation-item:nth-child(even) .motivation-card {
-    flex-direction: column;
+        flex-direction: column;
+        padding-inline: 15px;
     }
-
 }
