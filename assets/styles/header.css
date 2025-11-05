@@ -124,4 +124,8 @@
     .header-wrapper-buttons {
         column-gap: 20px;
     }
+
+    .header-wrapper-buttons {
+        margin-top: 15px;
+    }
 }
