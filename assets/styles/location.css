@@ -13,4 +13,39 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
+}
+
+.location-title::after {
+  left: 0.4em;
+}
+
+.location-description {
+  max-width: 490px;
+  margin-top: 10px;
+}
+
+.location-button {
+  margin-top: 40px;
+}
+
+@media (max-width: 1000px) {
+  .location {
+    flex-direction: column-reverse;
+    align-items: center;
+    row-gap: 40px;
+    padding-block: 40px;
+    padding-inline: 15px;
+  }
+
+  .location-img {
+    width: 100vw;
+    aspect-ratio: 1;
+    
+  }
+
+  .location-body {
+    width: 100vw;
+
+  }
 }
