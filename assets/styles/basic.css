@@ -50,7 +50,7 @@ a {
   background-color: transparent;
   border-color: var(--color-light);
   color: var(--color-light);
-  }
+}
 
 .button.transparent::after {
   content: "";
@@ -104,16 +104,17 @@ a {
 }
 
 .input {
-    width: 100%;
-    height: var(--input-height);
-    padding-inline: 25px;
-    color: var(--color-light);
-    background-color: transparent;
-    border: 1px solid var(--color-dark-gray);
-    border-radius: var(--border-radius);
+  width: 100%;
+  height: var(--input-height);
+  padding-inline: 25px;
+  color: var(--color-light);
+  background-color: transparent;
+  border: 1px solid var(--color-dark-gray);
+  border-radius: var(--border-radius);
 }
 
-.input::placeholder {
+.input::placeholder,
+select.input:invalid {
   color: var(--color-light-gray);
 }
 
@@ -126,3 +127,4 @@ a {
   background-color: var(--color-light-gray);
   outline: none;
 }
+

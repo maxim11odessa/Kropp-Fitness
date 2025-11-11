@@ -1,0 +1,135 @@
+.calculate {
+  background-color: var(--color-dark-alternative);
+  position: relative;
+  z-index: 0;
+}
+
+.calculate-inner {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  padding-top: 140px;
+  
+}
+
+.calculate-body-form {
+ max-width: 32.66vw;
+}
+
+.form-body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px 30px;
+  padding-top: 30px;
+}
+
+.calculate-form-desc {
+  max-width: 20.05vw;
+  padding-top: 16px;
+}
+
+.calculate-input.wide {
+  grid-column: -1 / 1;
+}
+
+.calculate-button {
+  margin-top: 40px;
+}
+
+.calculate-table-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 610px;
+}
+
+.calculate-table-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: 100%;
+  aspect-ratio: 1;
+  background-color: var(--color-dark);
+  border-radius: 50%;
+}
+
+.calculate-table {
+  position: relative;
+  border-collapse: collapse;
+}
+
+.calculate-table th {
+  padding-block: 20px;
+  text-align: left;
+  text-transform: uppercase;
+  color: var(--color-light);
+}
+
+.calculate-table td:not(tfoot td) {
+  padding-block: 14px;
+  border-top: 1px solid var(--color-light-gray);
+}
+
+.calculate-table :is(td, th) {
+  padding-right: 30px;
+}
+
+.calculate-table :is(td, th):not(:first-child) {
+  padding-left: 30px;
+  border-left: 1px solid;
+}
+
+.calculate-table tfoot {
+  color: var(--color-light);
+}
+
+.calculate-table tfoot td {
+  padding-top: 33px;
+  padding-bottom: 0;
+}
+
+
+@media (max-width: 1000px) {
+  .form-body {
+    grid-template-columns: 1fr;
+  }
+
+  .calculate-button {
+    width: 100%;
+  }
+
+  .calculate-inner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+  }
+
+  .calculate-table-wrapper {
+    padding-top: 50px;
+  }
+
+  .calculate-table-wrapper::before {
+    display: none;
+    
+  }
+
+  .calculate-body-form {
+    max-width: 80vw;
+  }
+
+  .calculate-form-desc {
+    max-width: 100%;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .calculate-table :is(td, th) {
+    padding-right: 0;
+  }
+}
