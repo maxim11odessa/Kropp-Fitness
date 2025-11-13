@@ -8,12 +8,11 @@
   display: flex;
   justify-content: center;
   column-gap: 20px;
-  padding-top: 140px;
-  
+  padding-block: 140px;
 }
 
 .calculate-body-form {
- max-width: 32.66vw;
+  max-width: 32.66vw;
 }
 
 .form-body {
@@ -92,7 +91,6 @@
   padding-bottom: 0;
 }
 
-
 @media (max-width: 1000px) {
   .form-body {
     grid-template-columns: 1fr;
@@ -106,7 +104,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
+    padding-block: 50px;
   }
 
   .calculate-table-wrapper {
@@ -115,7 +113,6 @@
 
   .calculate-table-wrapper::before {
     display: none;
-    
   }
 
   .calculate-body-form {
@@ -125,7 +122,6 @@
   .calculate-form-desc {
     max-width: 100%;
   }
-
 }
 
 @media (max-width: 500px) {
