@@ -105,5 +105,9 @@
     text-align: center;
   }
 
+  .footer-items-desc {
+    max-width: 60vw;
+  }
+
   
 }
