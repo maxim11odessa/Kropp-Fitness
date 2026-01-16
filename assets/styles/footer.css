@@ -1,0 +1,109 @@
+.footer {
+  --footerLogoWidth: 20vw;
+}
+
+.footer-main {
+  padding-top: 140px;
+}
+
+.footer-main-body,
+.footer-main-list {
+  display: grid;
+  column-gap: 5.3vw;
+  padding-top: 70px;
+  padding-bottom: 40px;
+}
+
+.footer-body-desc {
+  text-transform: uppercase;
+}
+
+.footer-main-body {
+  grid-template-columns: var(--footerLogoWidth) auto;
+}
+
+.footer-main-list {
+  grid-template-columns: var(--footerLogoWidth) repeat(3, 1fr);
+}
+
+.footer-contacts-item a {
+  font-style: normal;
+  font-weight: 300;
+  text-transform: lowercase;
+}
+
+.footer-address {
+  margin-bottom: 37px;
+}
+
+.has-arrow {
+  margin-bottom: 0.8em;
+}
+
+.has-arrow::after {
+  content: "";
+  display: inline-block;
+  width: 0.7em;
+  aspect-ratio: 1;
+  background: url(../svg/arrow-white.svg) center/contain no-repeat;
+  margin-left: 0.7ex;
+  transform: rotate(180deg);
+}
+
+.footer-subscribe {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.footer-subscribe-input {
+  padding-right: 70px;
+}
+
+.footer-subscribe-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  aspect-ratio: 1;
+  background: url(../svg/arrow_45.svg) center/70% no-repeat;
+  border: var(--border);
+  border-radius: 50%;
+}
+
+.footer-subscribe-button:hover {
+  background-color: var(--color-light-gray);
+}
+
+.footer-soc1als {
+  display: flex;
+  column-gap: 20px;
+}
+
+.footer-soc1als-item {
+  display: flex;
+  width: 23px;
+  height: auto;
+}
+
+.footer-copyright {
+  font-size: 14px;
+}
+
+@media (max-width: 800px) {
+  .footer-main {
+    padding-top: 50px;
+  }
+
+  .footer-main-list, .footer-main-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+  }
+
+  .footer-list-items, .footer-main-body {
+    text-align: center;
+  }
+
+  
+}

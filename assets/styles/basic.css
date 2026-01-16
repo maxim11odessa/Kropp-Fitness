@@ -4,6 +4,7 @@ body {
   color: var(--color-light-gray);
   font-size: 16px;
   line-height: 1.75;
+  overflow-x: hidden;
 }
 
 .container {
@@ -107,10 +108,10 @@ a {
   width: 100%;
   height: var(--input-height);
   padding-inline: 25px;
-  color: var(--color-light);
   background-color: transparent;
   border: 1px solid var(--color-dark-gray);
   border-radius: var(--border-radius);
+  border-color: var(--color-light-gray);
 }
 
 .input::placeholder,
@@ -118,9 +119,9 @@ select.input:invalid {
   color: var(--color-light-gray);
 }
 
-.input:hover {
+/* .input:hover {
   border-color: var(--color-light);
-}
+} */
 
 .input:focus {
   color: var(--color-dark);
